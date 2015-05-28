@@ -67,10 +67,11 @@ pp.pprint(esp)
 #archivo = open("ejemplo.py", "rb") 
 #prg = archivo.readlines()
 #print (prg)
-
+cad="" 
 with open('ejemplo.blue') as archivo:
     for prg in archivo:
 		print (prg)
+		cad=cad+prg
 
 def jugar (esp,programa):
 	print("la bola mira de frente")
@@ -232,7 +233,7 @@ def jugar (esp,programa):
 		if 	esp[pos[0]][pos[1]]=="meta":
 			print("Felicitaciones Ganaste")
 			
-jugar(esp,prg)
+jugar(esp,cad)
 
 
 
